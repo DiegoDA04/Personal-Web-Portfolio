@@ -1,0 +1,177 @@
+/* ==== Variables CSS ==== */
+
+:root {
+
+  --header-height: 3.5rem;
+
+  --font: Poppins;
+}
+
+/* ==== Global Style ==== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font), sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ==== Layout ==== */
+
+.section {
+  padding: 3.5rem 0 2rem;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/* ==== Navigation Bar ==== */
+
+.header{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background .3s;
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo,
+.nav__toggle {
+  color: black;
+  font-size: 1.2rem;
+}
+.nav__logo {
+  letter-spacing: .5px;
+  font-weight: 500;
+}
+.nav__toggle {
+  cursor: pointer;
+}
+.nav__list {
+  padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.nav__link {
+  color: black;
+  transition: color .3s;
+}
+.nav__link:hover {
+  color: blue;
+}
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  .nav__menu {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100%;
+    transition: right .3s;
+  }
+}
+
+.show-menu {
+  right: 0;
+}
+
+/* ==== Button ==== */
+.button {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  letter-spacing: 1.25px;
+  font-weight: 500;
+  border-radius: .5rem
+}
+
+/* ==== Hero ==== */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.hero__data {
+  text-align: center;
+}
+.hero__title {
+  font-size: 2rem;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 12ch;
+
+  animation: typing 2s steps(13),
+  blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+/* Typing Animation */
+@keyframes typing {
+  from { width: 0}
+}
+@keyframes blink {
+  50% { border-color: transparent}
+}
+
+
+.hero__title span {
+  color: #3a4e7a;
+}
+.hero__subtitle {
+  font-weight: 500;
+  color: #838383;
+  margin-bottom: 2rem;
+}
+.hero__button {
+  color: white;
+  background-color: #3a4e7a;
+}
+.hero__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__icon-link {
+  color: #3a4e7a;
+  font-size: 2rem;
+}
+
+
+
