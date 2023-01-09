@@ -7,6 +7,9 @@
   <!-- Link CSS -->
   <link rel="stylesheet" href="assets/styles/style.css">
 
+  <!-- Link  Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/5448518907.js" crossorigin="anonymous"></script>
 
@@ -130,8 +133,9 @@
   <section class="projects section" id="projects">
     <h2 class="section__title">Projects</h2>
     <span class="section__subtitle">Most recent works</span>
-    <div class="projects__container container">
-        <div class="projects__content grid">
+    <div class="projects__container container swiper">
+      <div class="swiper-wrapper">
+        <div class="projects__content swiper-slide grid">
           <img src="assets/images/theraphy-landing%20page.jpg" alt="" class="projects__img">
           <div class="projects__data">
             <h3 class="projects__title">Landing Page Theraphy</h3>
@@ -153,15 +157,52 @@
                 Code
               </a>
             </div>
-
           </div>
         </div>
+
+        <div class="projects__content swiper-slide grid">
+          <img src="assets/images/theraphy-landing%20page.jpg" alt="" class="projects__img">
+          <div class="projects__data">
+            <h3 class="projects__title">Web Portfolio</h3>
+            <p class="projects__description">
+              A Responsive Landing Page for the Theraphy project using HTML, CSS and Javascript.
+            </p>
+            <div class="projects__languages">
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+            </div>
+            <div class="projects__buttons">
+              <a href="https://diegoda04.github.io/Personal-Web-Portfolio/" class="button">
+                Demo
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="https://github.com/DiegoDA04/Personal-Web-Portfolio" class="projects__button-github button">
+                <i class="fa-brands fa-github"></i>
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <i class="fa-solid fa-chevron-right swiper-projects-icon"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="fa-solid fa-chevron-left swiper-projects-icon"></i>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 </main>
 <footer>
 
 </footer>
+<!-- Link Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Link main JS -->
 <script src="assets/scripts/main.js"></script>
+
 </body>
 </html>
