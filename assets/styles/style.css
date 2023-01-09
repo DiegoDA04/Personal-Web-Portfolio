@@ -276,6 +276,9 @@ img {
 .skills__data i {
   font-size: 2rem;
 }
+.skills__data img {
+  height: 2rem;
+}
 /* ==== Projects ===== */
 
 .projects__container {
