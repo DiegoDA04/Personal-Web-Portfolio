@@ -285,7 +285,7 @@ img {
   overflow: initial;
 }
 .projects__content {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 .projects__title {
   font-size: var(--h3-font-size);
