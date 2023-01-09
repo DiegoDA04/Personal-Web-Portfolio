@@ -82,7 +82,7 @@ img {
 /* ==== Reusable CSS clases ==== */
 
 .section {
-  padding: 2rem 0 4rem;
+  padding: 4.5rem 0 2rem;
 }
 .section__title {
   font-size: var(--h1-font-size);
@@ -261,6 +261,9 @@ img {
 }
 
 /* ==== Skills ==== */
+.skills {
+  height: 100vh;
+}
 .skills__data {
   text-align: center;
 }
