@@ -259,7 +259,11 @@ img {
   color: #4E4D4D;
   margin-bottom: var(--mb-2-5);
 }
-
+.about__img {
+  width: 325px;
+  border-radius: 1.5rem;
+  margin-bottom: var(--mb-1);
+}
 /* ==== Skills ==== */
 .skills__data {
   text-align: center;
