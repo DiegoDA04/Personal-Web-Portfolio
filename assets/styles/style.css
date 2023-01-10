@@ -151,7 +151,7 @@ img {
   transition: color .3s;
 }
 .nav__link:hover {
-  color: blue;
+  color: #3a4e7a;
 }
 .nav__close {
   position: absolute;
@@ -161,7 +161,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     background-color: white;
@@ -263,8 +263,10 @@ img {
 .about__img {
   width: 225px;
   border-radius: 1.5rem;
-  margin-bottom: var(--mb-1);
+  justify-self: center;
+  align-self: center;
 }
+
 /* ==== Skills ==== */
 .skills__data {
   text-align: center;
@@ -318,6 +320,7 @@ img {
 .projects__img {
   border-radius: .5rem;
   justify-self: center;
+  align-self: center;
 }
 .projects__languages {
   margin-bottom: var(--mb-1);
@@ -325,7 +328,7 @@ img {
 .projects__languages i {
   font-size: 1rem;
 }
-.projects__button-github {
+.projects__button--github {
   background: black;
 }
 .swiper-button-prev::after,
@@ -350,4 +353,80 @@ img {
   background: #3a4e7a;
 }
 
+/* ===== Media Queries ===== */
+@media screen and (max-width: 350px) {
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+@media screen and (min-width: 568px) {
+  .about__container {
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+  .about__data {
+    text-align: left;
+  }
+  .projects__button--github,
+  .projects__button--demo{
+    font-size: .8rem;
+  }
+  .projects__content {
+    grid-template-columns: repeat(2,1fr);
 
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+  .nav__close,
+  .nav__toggle{
+    display: none;
+  }
+  .nav__list {
+    padding: 0;
+    flex-direction: row;
+    column-gap: 1.5rem;
+  }
+  .section__title {
+
+  }
+  .skills__container {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .about__img {
+    width: 300px;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .about__img {
+    width: 375px;
+  }
+  .skills__container {
+    grid-template-columns: repeat(4,1fr);
+  }
+  .projects__content {
+    column-gap: 5rem;
+    align-items: center;
+  }
+  .skills__icon i {
+    font-size: 3rem;
+  }
+  .swiper-projects-icon {
+    font-size: 2rem;
+  }
+}
